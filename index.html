@@ -105,11 +105,11 @@
 
         @keyframes fadeInDown {
             from {
-                opacity: 1;
+                opacity: 0;
                 transform: translateY(-30px);
             }
             to {
-                opacity: 0;
+                opacity: 1;
                 transform: translateY(0);
             }
         }
@@ -120,7 +120,7 @@
                 transform: translateY(30px);
             }
             to {
-                opacity: 2;
+                opacity: 1;
                 transform: translateY(0);
             }
         }
@@ -153,7 +153,7 @@
 
         /* Card Styles */
         .card {
-            background: orangered;
+            background: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -204,7 +204,7 @@
 
         .card-number {
             font-size: 0.85rem;
-            color: #777;
+            color: #999;
             font-weight: 300;
             margin-bottom: 8px;
             letter-spacing: 1px;
@@ -218,7 +218,7 @@
         }
 
         .card-description {
-            color: #´999;
+            color: #666;
             font-size: 0.95rem;
             line-height: 1.6;
             font-weight: 300;
@@ -227,7 +227,7 @@
         /* Footer */
         .footer {
             background: #1a1a1a;
-            color: red;
+            color: white;
             text-align: center;
             padding: 40px 20px;
             font-weight: 300;
@@ -288,7 +288,7 @@
             <h1>Visión Artificial</h1>
             <p class="subtitle">con Python</p>
             <div class="author">
-                Realizado por: <strong>Alexander Meneses</strong>
+                Realizado por: <strong>Valeria Cundapi</strong>
             </div>
         </div>
         <div class="scroll-indicator"></div>
@@ -302,7 +302,7 @@
             <!-- Card 1: Abrir Imagen -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">🎨</div>
+                    <div class="card-icon">🖼️</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 01</div>
@@ -317,7 +317,7 @@
             <!-- Card 2: Escala de Grises -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">🌚</div>
+                    <div class="card-icon">🎮</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 02</div>
@@ -332,12 +332,12 @@
             <!-- Card 3: Información de Imagen -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">🧧</div>
+                    <div class="card-icon">ℹ️</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 03</div>
                     <h3 class="card-title">Imagen<h3>
-                    <a href="imagen.html">link de prueba</a>
+                    <a href="Imagen.html">link de prueba</a>
                     <p class="card-description">
                         Extrae y analiza propiedades como dimensiones, formato y datos de píxeles.
                     </p>
@@ -347,7 +347,7 @@
             <!-- Card 4: Ajustar Tamaño -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">📈</div>
+                    <div class="card-icon">📏</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 04</div>
@@ -362,11 +362,11 @@
             <!-- Card 5: OCR -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">📄</div>
+                    <div class="card-icon">📜</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 05</div>
-                    <h3 class="card-title">ocr<h3>
+                    <h3 class="card-title">OCR<h3>
                     <a href="ocr.html">link de prueba</a>
                     <p class="card-description">
                         Lee el texto de las imagenes.
@@ -374,32 +374,92 @@
                 </div>
             </div>
 
-            <!-- Card 6: chatbot-->
+            <!-- Card 6: Chatbot -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">🔊</div>
+                    <div class="card-icon">🔮</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 06</div>
-                    <h3 class="card-title">chatbot<h3>
+                    <h3 class="card-title">Chatbot<h3>
                     <a href="chatbot.html">link de prueba</a>
                     <p class="card-description">
-                       programa informático que simula una conversación humana.
+                        Diseñado para simular conversaciones humanas a través de texto.
                     </p>
                 </div>
             </div>
 
-             <!-- Card 7:chat_sentimientos -->
+             <!-- Card 7:Sentimientos -->
             <div class="card">
                 <div class="card-image">
-                    <div class="card-icon">📄</div>
+                    <div class="card-icon">💕</div>
                 </div>
                 <div class="card-content">
                     <div class="card-number">TEMA 07</div>
-                    <h3 class="card-title">chat_sentimientos<h3>
-                    <a href="chat_sentimientos.html">link de prueba</a>
+                    <h3 class="card-title">Sentimientos<h3>
+                    <a href="sentimientos.html">link de prueba</a>
                     <p class="card-description">
-                        nos pregunta nuestro estado de animo
+                        Es un chatbot que responde de acuerdo con tus sentimientos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 8: Ocr Placas -->
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-icon">🔤</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-number">TEMA 08</div>
+                    <h3 class="card-title">Ocr Placas<h3>
+                    <a href="ocr_placas.html">link de prueba</a>
+                    <p class="card-description">
+                        Detecta placas de automoviles
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 9: Placas2 -->
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-icon">🚓</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-number">TEMA 09</div>
+                    <h3 class="card-title"> Placas 2<h3>
+                    <a href="placas2.html">link de prueba</a>
+                    <p class="card-description">
+                        Detecta 2 placas de automoviles- Acepta y niega el paso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 10: Componentes de arduino -->
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-icon">🚓</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-number">TEMA 09</div>
+                    <h3 class="card-title"> Placas 2<h3>
+                    <a href="componentes.html">link de prueba</a>
+                    <p class="card-description">
+                        Chatbot que te dice los componentes de Arduino y su función.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 11: PNL para Chatbots -->
+            <div class="card">
+                <div class="card-image">
+                    <div class="card-icon">📻</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-number">TEMA 11</div>
+                    <h3 class="card-title"> PNL para Chatbots<h3>
+                    <a href="pnlcb.html">link de prueba</a>
+                    <p class="card-description">
+                        Tipos de Chatbots y ejemplos.
                     </p>
                 </div>
             </div>
@@ -409,7 +469,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Visión Artificial con Python | Alex</p>
+        <p>&copy; 2025 Visión Artificial con Python | Valeria Cundapi</p>
     </footer>
 </body>
 </html>
