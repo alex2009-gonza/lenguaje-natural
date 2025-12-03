@@ -1,0 +1,55 @@
+'''
+reutilizando el codigo de chat_bot.py, crear uno nuevo en el que el chatbot,
+te preginte como te sientes hoy, y te conteste con un mensaje positivo o negativo segun un analisis de sentimientos.
+'''
+#Ejemplo
+'''Tu: Me siento triste
+Vhatbot: Siento mucho que estes triste
+Tu: Me siento feliz
+Chato:Me alegra que hoy estes feliz'''
+
+import random
+from textblob import TextBlob  # Corregido: importación correcta de textblob
+
+saludos = ["hola"]
+respuesta_saludos = [
+    "Hola, ¿cómo te sientes el día de hoy?", "como estas?",
+]
+
+preguntas = ["Me siento mal.", "mal"]
+respuesta_pregunta = [
+    "Cuentame el motivo",
+    "Nietzsche: Quien tiene un Porqué para vivir, encontrará casi siempre el Cómo. No te sientas mal, ánimo!"
+]
+
+preguntas2 = ["me siento bien!.", "estoy bien"]
+respuesta_pregunta2 = [
+    "¡Me alegra!.", "Eso es todo!"
+]
+
+despedida = ["adios", "bye", "nos vemos", "hasta luego", "salir"]
+respuesta_despedida = [
+    "adiós, hasta pronto",
+    "fue un placer ayudarte",
+    "cuídate",
+    "nos vemos luego",
+    "bye"
+]
+
+print("Hola soy Chato, tu chatbot de confianza. Si deseas terminar, presiona 'salir'.")
+
+while True:
+    usuario = input("Tú: ").lower().strip()
+
+    if usuario in saludos:
+        print("Chatbot:", random.choice(respuesta_saludos))
+
+    elif usuario in preguntas:
+        print("Chatbot:", random.choice(respuesta_pregunta))
+
+    elif usuario in preguntas2:
+        print("Chatbot:", random.choice(respuesta_pregunta2))
+
+    elif usuario in despedida:
+        print("Chatbot:", random.choice(respuesta_despedida))
+        break
